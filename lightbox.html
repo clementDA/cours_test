@@ -24,7 +24,7 @@
     <body class="antialiased bg-gray-200 min-h-screen" style="font-family: 'Montserrat';"> 
 
         <!-- Lightbox -->
-        <div x-data="lightbox()">
+        <div  x-data="lightbox()">
 
             <div class="flex flex-col h-screen items-center justify-center">      
                 <div class="bg-white p-8 shadow-md rounded-sm">
@@ -33,13 +33,13 @@
                     <h2 class="text-sm text-gray-400 mb-8">Alpine JS & Tailwind CSS</h1>
 
                     <!-- Overlay -->
-                    <div class="relative w-64 cursor-pointer shadow-md"
+                    <div data-cy="testlight"  class="relative w-64 cursor-pointer shadow-md"
                          @mouseover="isOverlayVisible = true"
                          @mouseover.away="isOverlayVisible = false"
                          @click="openLightbox()"
                     >
                         <!-- Image -->
-                        <img src="https://picsum.photos/id/301/1024/1024" />
+                        <img  src="https://picsum.photos/id/301/1024/1024" />
 
                         <!-- On hover, overlay -->
                         <div class="absolute top-0 left-0 bg-black bg-opacity-60 w-full h-full"
