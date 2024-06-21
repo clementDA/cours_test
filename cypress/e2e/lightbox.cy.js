@@ -8,6 +8,7 @@ describe('Test du site', () => {
         cy.wait(1500);
         cy.get('body').click(0,0)
         
+        
      
     });
         
