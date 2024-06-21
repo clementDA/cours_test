@@ -7,9 +7,9 @@ describe('Test du site', () => {
         cy.get('[data-cy=testlight]').click();
         cy.wait(1500);
         cy.get('body').click(0,0)
-        
+
         
      
     });
         
-  });
+  }); 
